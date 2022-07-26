@@ -169,17 +169,32 @@ img.hero-leftimg {
     align-items: center;
     height: 85vh;   
 }
+.website-designDiv{
+    gap: 120px;
+    margin: 0 25px;
+    padding: 30px 0;
+}
 
 
 .hero-leftDiv {
     padding-left: 50px;
 }
 
+.lets-talkbtnDiv{
+    padding: 18px 38px;
+    font-size: 16px;
+    background-color: var(--light-green);
+    border: none;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 
 
 
 .connect-tosection{
-    margin: 100px 0;
+    margin: 60px 0;
 }
 .connect-title {
     font-size: 50px;
@@ -205,4 +220,31 @@ img.hero-leftimg {
     height: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+h4{
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-family: "Raleway"
+}
+.web-design-info{
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.web-imgdiv {
+    width: 34rem;
+    height: 500px;
+    overflow: hidden;
+}
+
+.web-imgdiv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
 }
