@@ -222,12 +222,17 @@ img.hero-leftimg {
     object-position: top;
 }
 
-h4{
-    font-size: 2.5rem;
-    color: var(--text-dark);
-    padding-bottom: 30px;
-    font-weight: 700;
-    font-family: "Raleway"
+.product h4{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.product p a{
+    list-style-type: none;
+    color: #8c8c8c;;
+    font-size: 14px;
+    font-weight: 600;
 }
 .web-design-info{
     font-size: 1.2rem;
@@ -294,4 +299,58 @@ h4{
 }
 .seeMore-btn{
     margin-top: 40px;
+}
+
+
+.foot{
+    background-color: #10181d;
+    height: 500px;
+    width: 100%;
+}
+.footer{
+    
+    max-width: 1250px;
+    margin:0 auto;
+    color: white;
+}
+.heading{
+    display: flex;justify-content: space-between;
+    padding: 50px 0;
+
+}
+.social{
+    display: flex;
+    
+}
+.content{
+    display: flex;justify-content: space-between;
+    margin: 73px 0;
+    
+}
+
+img.footer-logo {
+    width: 145px;
+}
+.content p{
+    margin:12px;
+    color: rgb(160, 160, 160);
+
+}
+.content h4{
+    margin:12px;
+}
+.content a{
+    text-decoration: none;
+}
+
+.social-icons{
+    background-color: rgba(255, 255, 255, 0.093);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 500px;
+    margin-right: 10px;
 }
