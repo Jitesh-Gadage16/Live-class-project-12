@@ -55,7 +55,7 @@
  }
 
  .container{
-    width: 1250px;
+    max-width: 1250px;
     margin:0 auto;
  }
 
@@ -210,7 +210,7 @@ img.hero-leftimg {
 }
 
 .connect-imgDiv {
-    width: 1078px;
+    max-width: 1078px;
     height: 550px;
     overflow: hidden;
     padding: 40px 0;
@@ -272,7 +272,7 @@ img.hero-leftimg {
 
 .members-imgDiv{
     height: 350px;
-    width: 370px;
+    max-width: 370px;
     margin-bottom: 20px;
 }
 
@@ -355,3 +355,158 @@ img.footer-logo {
     border-radius: 500px;
     margin-right: 10px;
 }
+
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
+
+@media (max-width: 770px) { 
+    .mobile{
+        display: block!important;
+    }
+    .desktop{
+        display: none!important;
+    }
+    .website-designDiv{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .members-div{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1149px) { 
+    .hero-imgdiv {
+        width: 22rem;
+        height: 420px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem!important;
+        line-height: 50px;
+    }
+    .hero-secondry-title {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .enter-mail-div input[type="email"] {
+        padding: 22px 190px 22px 20px;
+        width: 12rem;
+    }
+
+    .lets-talkbtn {
+        top: 5px;
+        right: 15px;
+    }
+}
+
+
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    height: 85vh;
+    padding-bottom: 20px;
+}
+.hero-left .hero-image {
+    width: 28rem;
+    height: 580px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hero-left .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-right h1 {
+    font-family: "Raleway";
+    font-size: 4.4rem;
+    color: var(--white);
+    line-height: 75px;
+}
+.hero-right p {
+    color: var(--white-dim);
+    margin-top: 40px;
+    line-height: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+.hero-right .contact-email {
+    position: relative;
+}
+.hero-right .contact-email input[type="email"] {
+    padding: 28px 190px 28px 20px;
+    width: 23rem;
+    outline: none;
+}
+.hero-right .contact-email input[type="email"]::placeholder {
+   
+    font-size: 16px;
+    color: var(--text-gray);
+}
+.hero-right .contact-email button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+@media only screen and (max-width: 1149px) {
+    .hero .hero-right h1 {
+        font-size: 2.8rem;
+        line-height: 50px;
+    }
+    .hero .hero-right p {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .hero .hero-right .contact-email input[type="email"] {
+        padding: 22px 190px 22px 20px;
+        width: 12rem;
+    }
+    .hero .hero-right .contact-email button  {
+        top: 5px;
+        right: 15px;
+    }
+    .hero-left .hero-image {
+        width: 22rem;
+        height: 420px;
+    }
+}
+@media only screen and (max-width: 900px) {
+
+    .hero {
+        gap: 20px;
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        margin: 0 20px 20px 20px;
+        justify-content: center;
+    }
+    .hero .hero-right h1 {
+        text-align: center;
+        padding-left: 10px;
+        font-size: 2.4rem;
+        line-height: 40px;
+    }
+    .hero .hero-right p {
+        text-align: center;
+        padding: 0 20px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .hero .hero-right .contact-email input[type="email"] {
+        padding: 22px 200px 22px 20px;
+        width: 12rem;
+        display: block;
+    }
+
+ }
