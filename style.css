@@ -83,11 +83,11 @@
  .nav-links{
     padding: 0 20px;
     font-size: 16px;
-    color: #fff;
+    color: var(--white);
  }
 
  li.nav-links.tak-btn {
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     padding: 10px 25px;
     margin-left: 70px;
 }
@@ -105,7 +105,7 @@ img.hero-leftimg {
 
 h1.hero-title {
     font-size: 65px;
-    color: #fff;
+    color: var(--white);
     text-align: left;
     margin: 0 0 40px 0;
 }
@@ -120,9 +120,9 @@ h1.hero-title {
 
 .enter-mail-div.d-flex {
     position: relative;
-    background: #fff;
+    background: var(--white);
     padding: 0px;
-    width: 550px;
+    max-width: 550px;
 }
 
 input[type="email"] {
@@ -141,7 +141,7 @@ input[type="email"] {
     right: 10px;
     background-color: var(--light-green);
     padding: 20px 50px;
-    color: #fff;
+    color: var(--white);
 }
 
 
@@ -150,8 +150,8 @@ input[type="email"] {
 }
 
 .hero-imgdiv {
-    width: 28rem;
-    height: 580px;
+    width: 26.5rem;
+    /* height: 580px; */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -201,6 +201,7 @@ img.hero-leftimg {
     font-weight: 700;
     font-family: "Raleway";
     padding: 40px;
+    max-width: 700px;
 }
 
 .count-num {
@@ -245,6 +246,7 @@ img.hero-leftimg {
     width: 34rem;
     height: 500px;
     overflow: hidden;
+    padding:20px;
 }
 
 .web-imgdiv img{
@@ -304,7 +306,7 @@ img.hero-leftimg {
 
 .foot{
     background-color: #10181d;
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
     margin-top: 50px;
 }
@@ -325,7 +327,7 @@ img.hero-leftimg {
 }
 .content{
     display: flex;justify-content: space-between;
-    margin: 73px 0;
+    padding: 73px 0;
     
 }
 
@@ -363,6 +365,38 @@ img.footer-logo {
     display: block;
 }
 
+.hero-section {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    height: 85vh;
+}
+
+.sidenavMenu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    right: -1000px;
+    background: var(--white);
+    overflow-x: hidden;
+    transition: .8s;
+}
+
+.mob-menus div {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.signin-btn{
+    border: 1px solid var(--white);
+    padding: 10px 25px
+}
+
 @media (max-width: 770px) { 
     .mobile{
         display: block!important;
@@ -377,12 +411,82 @@ img.footer-logo {
     .members-div{
         flex-wrap: wrap;
     }
+
+    .header-section-div {
+        height: 100vh;
+        background-size: cover;
+        opacity: 0.7;
+        z-index: -1;
+        /* background: 100% 100%; */
+        background-image: url(./assets/Picsart_22-07-26_21-17-47-217.jpg)!important;
+        background-color: var(--white);
+    }
+    .hero-leftDiv {
+        display:none;
+    }
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .web-imgdiv {
+        width: 32rem!important;
+    }
+    .team-topDiv{
+        flex-direction: column;
+    }
+    .team-topTitle,.team-topright{
+        width: 100%
+    }
+    .team-topright{
+        padding:30px;
+    }
+
+    .team-topTitle {
+        padding-left: 30px;
+    }
+
+    .members-imgDiv{
+        margin: 0 auto;
+    }
+
+    .member-name{
+        margin: 15px 0!important;
+        text-align: center;
+    }
+
+    .member-disc{
+        text-align: center;
+        padding: 10px 0 30px 0;
+    }
+    .content{
+        flex-wrap: wrap;
+    }
+    .connect-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:900px)  {
+    .hero-imgdiv {
+        width: 19rem!important;
+    }
+
+    .hero-leftDiv {
+        padding-left: 20px;
+    }
+
+    .hero-rightDiv {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 1149px) { 
     .hero-imgdiv {
         width: 22rem;
         height: 420px;
+    }
+    .nav-wrapper{
+        padding: 0 20px;
     }
 
     .hero-title {
@@ -400,7 +504,7 @@ img.footer-logo {
     }
 
     .lets-talkbtn {
-        top: 5px;
+        top: 10px;
         right: 15px;
     }
 }
@@ -408,105 +512,4 @@ img.footer-logo {
 
 
 
-.hero {
-    display: flex;
-    justify-content: center;
-    gap: 90px;
-    align-items: center;
-    height: 85vh;
-    padding-bottom: 20px;
-}
-.hero-left .hero-image {
-    width: 28rem;
-    height: 580px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.hero-left .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.hero-right h1 {
-    font-family: "Raleway";
-    font-size: 4.4rem;
-    color: var(--white);
-    line-height: 75px;
-}
-.hero-right p {
-    color: var(--white-dim);
-    margin-top: 40px;
-    line-height: 30px;
-    font-size: 1.4rem;
-    margin-bottom: 40px;
-}
-.hero-right .contact-email {
-    position: relative;
-}
-.hero-right .contact-email input[type="email"] {
-    padding: 28px 190px 28px 20px;
-    width: 23rem;
-    outline: none;
-}
-.hero-right .contact-email input[type="email"]::placeholder {
-   
-    font-size: 16px;
-    color: var(--text-gray);
-}
-.hero-right .contact-email button {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-}
 
-@media only screen and (max-width: 1149px) {
-    .hero .hero-right h1 {
-        font-size: 2.8rem;
-        line-height: 50px;
-    }
-    .hero .hero-right p {
-        font-size: 1rem;
-        margin-top: 20px;
-    }
-    .hero .hero-right .contact-email input[type="email"] {
-        padding: 22px 190px 22px 20px;
-        width: 12rem;
-    }
-    .hero .hero-right .contact-email button  {
-        top: 5px;
-        right: 15px;
-    }
-    .hero-left .hero-image {
-        width: 22rem;
-        height: 420px;
-    }
-}
-@media only screen and (max-width: 900px) {
-
-    .hero {
-        gap: 20px;
-        flex-wrap: wrap;
-        height: auto;
-        align-items: center;
-        margin: 0 20px 20px 20px;
-        justify-content: center;
-    }
-    .hero .hero-right h1 {
-        text-align: center;
-        padding-left: 10px;
-        font-size: 2.4rem;
-        line-height: 40px;
-    }
-    .hero .hero-right p {
-        text-align: center;
-        padding: 0 20px;
-        line-height: 24px;
-        font-size: 14px;
-    }
-    .hero .hero-right .contact-email input[type="email"] {
-        padding: 22px 200px 22px 20px;
-        width: 12rem;
-        display: block;
-    }
-
- }

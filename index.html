@@ -21,12 +21,13 @@
     <div class="full-width">
         <div class="header-section-div">
             <div class="container">
-
+              <!---------------------- navbar start  ------------------------->
 
                 <div class="nav-wrapper d-flex justify-content-between align-items-center full-width">
                     <div class="nav-logo">
-                        <img src="./assets/white-logo.png" alt="" class="nav-logo">
-                    </div> 
+                        <img src="./assets/white-logo.png" alt="" class="nav-logo desktop">
+                        <img src="./assets/logo-black.svg" alt="" class="nav-logo mobile ">
+                    </div>
                     <div class="navmenu-div desktop">
                         <ul class="nav-menulist d-flex">
                             <li class="nav-links">Home</li>
@@ -40,57 +41,66 @@
                     </div>
                     <div class="mobile">
                         <div id="menu-open" class="cur-pointer z-99999 " onclick="openNav();">
-                            <img loading="lazy" style="height: 30px; width: 30px;" src="https://cdn.playerzpot.com/images/mob-menu-head.png
-                            " alt="Play fantasy games online">
+                            <img loading="lazy" style="height: 30px; width: 30px;"
+                                src="https://ineuron.ai/images/hamburger.svg" alt="Play fantasy games online">
                         </div>
                         <div id="menu-close" style="display: none; cursor: pointer;"
                             class="d-none cur-pointer menu-close z-99999">
                             <img loading="lazy" onclick="closeNav()" style="height: 25px; width: 25px;"
-                                src="https://cdn.playerzpot.com/images/cancel-menu.png"
-                                alt="Play fantasy games online">
+                                src="https://ineuron.ai/images/close.svg" alt="Play fantasy games online">
                         </div>
                     </div>
                 </div>
 
+              <!---------------------- navbar end  ------------------------->
 
+              <!---------------------- Hero section start  ------------------------->
 
-
-
-                <!-- <div class="hero-section-div  d-flex justify-content-center align-items-center">
-
-                    <div class="hero-leftDiv ">
-                        <div class="hero-imgdiv">
-                            <img src="./assets/Picsart_22-07-26_21-17-47-217.jpg" alt="meeting img"
-                                class="hero-leftimg">
-                        </div>
-                    </div>
-                    <div class="hero-rightDiv">
-                        <h1 class="hero-title">
-                            Enpowering your business with the best solutions
-                        </h1>
-                        <div class="hero-secondry-title">
-                            We Connect barhnd & businesss with your target market in the most desirabl, refind, and
-                            evidance way possible through the digital medium
-                        </div>
-                        <div class="enter-mail-div d-flex align-items-center">
-                            <input type="email" name="mail" id="" placeholder="Enter your mail address">
-                            <div class="lets-talkbtn">
-                                Let's Talk
+                <div>
+                    <div class="hero-section">
+                        <div class="hero-leftDiv ">
+                            <div class="hero-imgdiv">
+                                <img src="./assets/Picsart_22-07-26_21-17-47-217.jpg" alt="meeting img"
+                                    class="hero-leftimg">
                             </div>
                         </div>
+                        <div class="hero-rightDiv">
+                            <h1 class="hero-title">
+                                Enpowering your business with the best solutions
+                            </h1>
+                            <div class="hero-secondry-title">
+                                We Connect barhnd & businesss with your target market in the most desirabl, refind, and
+                                evidance way possible through the digital medium
+                            </div>
+                            <div class="enter-mail-div d-flex align-items-center">
+                                <input type="email" name="mail" id="" placeholder="Enter your mail address">
+                                <div class="lets-talkbtn">
+                                    Let's Talk
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
+                </div>
 
-                </div> -->
-
+              <!---------------------- Hero section end  ------------------------->
             </div>
         </div>
+
+
+
+
+
+        <!------------------------- connect-tosection  --------------------------->
 
         <div class="connect-tosection">
             <div class="container">
 
                 <div class="connect-togetherdiv flex-column d-flex justify-content-center align-items-center">
                     <div class="connect-title text-center">
-                        We Connect Your Business <br> with your target
+                        We Connect Your Business with your target
                     </div>
 
                     <div class="connect-countDiv d-flex justify-content-evenly align-items-center full-width">
@@ -135,6 +145,11 @@
             </div>
         </div>
 
+
+        <!------------------------- connect-tosection  --------------------------->
+
+        <!-------------------- zigzag-sectionDiv  --------------------------------->
+
         <div class="zigzag-sectionDiv">
             <div class="container">
 
@@ -168,7 +183,7 @@
 
                 </div>
 
-                <div class="website-designDiv d-flex justify-content-around align-items-center">
+                <div class="website-designDiv d-flex justify-content-around align-items-center column-reverse">
 
                     <div class="web-rightDiv">
                         <div class="web-imgdiv">
@@ -217,6 +232,11 @@
 
             </div>
         </div>
+
+        <!-------------------- zigzag-sectionDiv  --------------------------------->
+
+        <!-------------------- Team-membSection  --------------------------------->
+
 
         <div class="Team-membSection">
             <div class="container">
@@ -281,6 +301,10 @@
             </div>
         </div>
 
+        <!-------------------- Team-membSection  --------------------------------->
+
+
+        <!-------------------- Footer  --------------------------------->
 
 
         <div class="foot">
@@ -351,6 +375,58 @@
             </div>
 
         </div>
+
+        <!-------------------- Footer  --------------------------------->
+
+
+
+        <div id="mySidenavMenu" class="sidenavMenu mobile" style="right: -1000px;">
+            <div class="mob-menus">
+                <div>
+                    Home
+                </div>
+                <div>
+                    About Us
+                </div>
+                <div>
+                    Pages
+                </div>
+                <div>
+                    Agent
+                </div>
+                <div>
+                    Blogs
+                </div>
+                <div>
+                    Subscribe
+                </div>
+                <div>
+                    <button class="signin-btn">SIGN IN</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenavMenu").style.right = "0px";
+                document.getElementById("menu-open").style.display = "none";
+                document.getElementById("menu-close").style.display = "block";
+                document.body.style.overflow = "hidden";
+
+                // var bodyScroll = document.getElementsByClassName("bodyClass");
+                // bodyScroll.classList.add("asdasd");
+            }
+
+            function closeNav() {
+                // alert('asda');
+                document.getElementById("mySidenavMenu").style.right = "-1000px";
+                document.getElementById("menu-open").style.display = "block";
+                document.getElementById("menu-close").style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        </script>
 
 </body>
 
